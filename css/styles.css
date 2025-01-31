@@ -636,7 +636,7 @@ img {
   left: 50%;
   width: 408px;
   min-height: 584px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 
   background-color: #fcfcfc;
   border-radius: 4px;
@@ -675,14 +675,14 @@ img {
 }
 
 .modal-close:hover > .close-icon,
-.close-btn:focus > .close-icon {
+.modal-close:focus > .close-icon {
   fill: #ffffff;
 }
 
-.modal-close:hover > .icon-svg-close,
+/* .modal-close:hover > .icon-svg-close,
 .modal-close:focus > .icon-svg-close {
   fill: #ffffff;
-}
+} */
 
 .icon-svg-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
