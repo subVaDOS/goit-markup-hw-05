@@ -795,14 +795,14 @@ img {
   fill: #2e2f42;
 }
 
-.input-icon:hover,
+/* .input-icon:hover, */
 .input-icon:focus {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #4d5ae5;
 }
 
-.input-container:hover > .input-icon,
-.input-container:focus > .input-icon {
+/* .input-container:hover > .input-icon, */
+.form-input:focus-within + .input-icon {
   fill: #4d5ae5;
 }
 
