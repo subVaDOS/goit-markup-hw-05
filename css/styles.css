@@ -39,6 +39,7 @@ address {
 }
 button {
   cursor: pointer;
+  font-family: inherit;
 }
 
 input {
@@ -593,6 +594,13 @@ img {
   padding-left: 24px;
 }
 
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #404bbf;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .send-btn-icon {
   fill: #fff;
   margin: 8px;
@@ -770,16 +778,15 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus,
-.form-input:hover {
-  border-color: #4d5ae5;
-}
+.form-input:hover,
 .form-input:focus {
   border: 1px solid #4d5ae5;
   box-shadow: 0 0 4px rgba(77, 90, 229, 0.5);
 }
-.form-input:active > .input-icon,
-.form-input:focus > .input-icon {
+
+.input-icon:hover,
+.input-icon:focus {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #4d5ae5;
 }
 
@@ -791,6 +798,12 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2e2f42;
 }
+
+/* .form-input:hover,
+.form-input:focus {
+  fill: #4d5ae5;
+  border-color: #4d5ae5;
+} */
 
 .comment-area {
   width: 100%;
@@ -810,7 +823,7 @@ img {
 .comment-area:focus {
   border-color: #4d5ae5;
 }
-.form-input-wrapper-comment {
+.form-comment {
   margin-bottom: 16px;
 }
 textarea::placeholder {
@@ -820,7 +833,7 @@ textarea::placeholder {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
-.form-input-wrapper-checkbox {
+.form-checkbox {
   margin-bottom: 24px;
 }
 .checkbox {
@@ -872,7 +885,6 @@ input[type='checkbox']:checked + .checkbox-label .checkbox-span {
   margin: 0 auto;
   border-radius: 4px;
   padding: 16px 32px;
-  font-family: 'Roboto', sans-serif;
   min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -885,5 +897,12 @@ input[type='checkbox']:checked + .checkbox-label .checkbox-span {
   text-align: center;
   color: #fff;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #404bbf;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
