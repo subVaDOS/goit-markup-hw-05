@@ -677,7 +677,7 @@ img {
 
 .modal-close:hover > .close-icon,
 .modal-close:focus > .close-icon {
-  fill: #4d5ae5;
+  fill: #ffffff;
 }
 
 /* .modal-close:hover > .icon-svg-close,
